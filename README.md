@@ -10,13 +10,14 @@ Future developments include creating a personalized Large Language Model (LLM) f
 - **Document Ingestion**
   - Upload PDFs, text files, or point to URLs
   - Automatic text extraction and chunking
+  - Search the web using Tavily
 
 - **Vector Store Retrieval**
-  - Embedding-based search (FAISS, Chroma, etc.)
+  - Embedding-based search (Pinecone, Chroma, etc.)
   - Fast similarity lookup
 
 - **LangChain + LangGraph Orchestration**
-  - Chain of retrieval → context assembly → generation
+  - Chain of retrieval -> context assembly -> generation
   - Graph-based prompt management
 
 - **Interactive Streamlit UI**
@@ -25,7 +26,7 @@ Future developments include creating a personalized Large Language Model (LLM) f
   - Conversation history persistence
 
 - **Configurable LLM Backend**
-  - Support for OpenAI, Azure, local models (e.g. Llama 2 via HuggingFace)
+  - Support for OpenAI, Google, Meta, and more
   - Temperature, max tokens, and top-k/top-p tuning
 
 
@@ -50,6 +51,7 @@ Future developments include creating a personalized Large Language Model (LLM) f
     ```
 
 4. **Set up environment variables**
+
     Create a `.env` in the project root:
     ```
     AZURE_OPENAI_API_KEY=...
@@ -58,9 +60,6 @@ Future developments include creating a personalized Large Language Model (LLM) f
     AZURE_OPENAI_VERSION=...
 
     TAVILY_API_KEY=...
-
-    PINECONE_API_KEY=...
-    PINECONE_ENV=...
     ```
 
 
